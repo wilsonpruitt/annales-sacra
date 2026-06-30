@@ -9,7 +9,7 @@
   "indexTitle": "The journeys & the letters",
   "spanLabels": { "ref": "Reference", "detail": "Where", "aside": "Setting" },
   "howToRead": "Two tracks for two witnesses to the same life: above, the journeys as Luke narrates them in Acts; below, the letters Paul wrote along the way, each block set at the place and moment it was sent. Click a journey or a letter for its dossier; the diamonds on the spine are the turning-points. A dotted edge marks a date the sources leave genuinely open.",
-  "seedNote": "Pauline chronology is reconstructed, not given — the one fixed peg is Gallio's proconsulship at Corinth (c. A.D. 51), from which the rest is counted forward and back. Dates here follow the common consensus. Two honest fault-lines: the date of Galatians (the early/South-Galatian view placed here, against the later view) and everything after Acts ends — the release, the final journeys, and the martyrdom rest on the Pastoral Epistles and church tradition, and are marked uncertain.",
+  "seedNote": "Pauline chronology is reconstructed, not given. This edition lets you read it three ways — use the chronology switch above to move between the Acts-based consensus (anchored on Gallio's proconsulship at Corinth, c. A.D. 51), Douglas Campbell's letters-first reconstruction (anchored on the escape from Aretas's ethnarch, c. A.D. 36–37), and Gerd Lüdemann's (anchored on the time-spans of Galatians 1–2, counted from a crucifixion of A.D. 30). The two alternatives deliberately bracket Acts and build from the letters alone, so they date the letters earlier and in a different order — and they simply do not fix the Acts-only episodes (the numbered journeys, the Caesarean custody, the voyage and shipwreck, the martyrdom), which is why those blocks thin out or vanish when you switch. Each scheme's dates are drawn from that scholar's own work, but every reconstruction here remains a scholarly proposal, not a record.",
   "lanes": [
     {
       "id": "journeys",
@@ -313,6 +313,89 @@
       "kind": "death",
       "approx": true,
       "note": "Beyond the close of Acts. Tradition holds that Paul was beheaded on the Ostian Way in Nero's persecution — \"the time of my departure has come.\""
+    }
+  ],
+  "schemes": [
+    {
+      "id": "consensus",
+      "name": "the Acts-based consensus",
+      "short": "Acts consensus",
+      "anchor": "Gallio's proconsulship at Corinth · c. A.D. 51 (the Delphi inscription)",
+      "note": "The standard reconstruction: Acts supplies the itinerary, the letters are slotted into it, and the whole is pinned to the one externally-dated point — Gallio's term as proconsul of Achaia (Acts 18:12), fixed by an inscription at Delphi to about A.D. 51. From that peg the journeys and letters are counted forward and back."
+    },
+    {
+      "id": "campbell",
+      "name": "Campbell · Framing Paul",
+      "short": "Campbell",
+      "anchor": "the escape from the ethnarch of Aretas IV at Damascus · c. A.D. 36–37 (2 Cor 11:32–33)",
+      "note": "Douglas Campbell (Framing Paul, 2014) brackets Acts and rebuilds the life from the letters alone, anchoring not on Gallio but on the flight from Aretas's ethnarch — the one window the Nabataeans plausibly held Damascus. The letters move early and reorder: 1–2 Thessalonians by c. 40, the captivity letters from an Ephesian (not Roman) imprisonment c. 50, and Galatians and Romans last, c. 51–52. The Pastorals he judges pseudonymous and drops; Acts' journey framework and everything after the letters fall outside the book's scope, so those blocks are removed rather than dated for him.",
+      "range": [33, 53],
+      "spans": {
+        "damascus-arabia": { "start": 34, "end": 37, "approx": true, "aside": "The hinge of Campbell's whole chronology: the escape from Aretas's ethnarch (2 Cor 11:32–33) falls c. 36–37, the only plausible window of Nabataean control over Damascus. He counts from here, not from Gallio." },
+        "antioch-tarsus": { "start": 42, "end": 49, "approx": true, "aside": "Campbell's long 'years of shadow' — a largely unsuccessful mission between the early Macedonian work and the Jerusalem conference. He does not map Acts' Tarsus-and-Antioch detail onto particular years." },
+        "first-journey": { "drop": true },
+        "second-journey": { "start": 39, "end": 41, "approx": true, "aside": "Campbell splits what Acts fuses. The founding of the Macedonian churches — and so 1–2 Thessalonians — he dates to c. 40, roughly a decade before the consensus and before the conference. Acts' numbered-journey structure is set aside; the consensus 'first journey' is bracketed altogether." },
+        "third-journey": { "start": 50, "end": 52, "approx": true, "aside": "Campbell's later Aegean and Asian phase, including an Ephesian imprisonment c. 50 — the setting, on his reading, of the captivity letters." },
+        "caesarea-custody": { "drop": true },
+        "voyage-rome": { "drop": true },
+        "roman-imprisonment": { "drop": true },
+        "final-ministry": { "drop": true },
+        "galatians": { "start": 52, "end": 52, "approx": true, "aside": "Campbell dates Galatians LATE, not early — part of the 'year of crisis' with Philippians and Romans, c. 51–52. The reverse of the South-Galatian early dating shown under the consensus." },
+        "thessalonians": { "start": 40, "end": 42, "approx": true, "aside": "Campbell's earliest letters, both authentic, c. 40–42 — written soon after the Macedonian founding." },
+        "first-corinthians": { "start": 50, "end": 51, "approx": true, "aside": "From the Aegean ministry, c. 50–51." },
+        "second-corinthians": { "start": 50, "end": 51, "approx": true, "aside": "Same Aegean cluster, c. 50–51." },
+        "romans": { "start": 52, "end": 52, "approx": true, "aside": "Written last of the major letters, in the 'year of crisis,' c. 51–52." },
+        "prison-epistles": { "start": 50, "end": 50, "approx": true, "aside": "Campbell's most striking move: Colossians, Ephesians (his 'Laodiceans') and Philemon come EARLY, c. 50, from an Ephesian imprisonment — before the Corinthian letters and Romans, inverting the usual late-Roman dating. (Philippians he groups later, with the 'year of crisis.')" },
+        "pastorals": { "drop": true }
+      },
+      "events": {
+        "stephen": { "drop": true },
+        "damascus-road": { "year": 34, "approx": true, "aside": "Three years before the Aretas escape (Gal 1:18). Reviewers rarely state Campbell's conversion year outright, so c. 34 is inferred from his 36–37 anchor." },
+        "council": { "year": 49, "approx": true, "aside": "Campbell's second Jerusalem visit, c. 49–50." },
+        "gallio": { "year": 51, "approx": true, "aside": "Campbell does not deny Paul was in Corinth c. 50–51, but he deliberately sets the Gallio synchronism aside — it is not load-bearing for him, as it is for the consensus." },
+        "ephesus-riot": { "year": 50, "approx": true, "aside": "Correlated with the Ephesian imprisonment crisis that, on Campbell's reading, produced the captivity letters." },
+        "arrest": { "drop": true },
+        "shipwreck": { "drop": true },
+        "rome-arrival": { "drop": true },
+        "martyrdom": { "drop": true }
+      }
+    },
+    {
+      "id": "ludemann",
+      "name": "Lüdemann · Studies in Chronology",
+      "short": "Lüdemann",
+      "anchor": "the relative time-spans of Galatians 1–2, counted from a crucifixion of A.D. 30",
+      "note": "Gerd Lüdemann (Paul, Apostle to the Gentiles, 1984) builds only from the seven undisputed letters, anchoring on the spans Paul himself gives in Galatians 1–2 ('after three years… after fourteen years') counted from a crucifixion of A.D. 30. Acts is admitted only afterward, where it does not conflict. His signature result: the European churches — Philippi, Thessalonica, Corinth — are founded c. 38–41, about a decade before the consensus and before the Jerusalem conference, so 1 Thessalonians dates to c. 41. The deutero-Pauline letters (2 Thessalonians, Colossians, Ephesians, the Pastorals) and the post-collection Acts narrative are dropped.",
+      "range": [32, 58],
+      "spans": {
+        "damascus-arabia": { "start": 33, "end": 35, "approx": true, "aside": "Conversion at Damascus in 33 (three years before the first Jerusalem visit, Gal 1:18), counted from a 30 A.D. crucifixion. The Aretas escape sits here too, but is not Lüdemann's anchor." },
+        "antioch-tarsus": { "start": 35, "end": 38, "approx": true, "aside": "The years in Syria and Cilicia (Gal 1:21) after the first Jerusalem visit, until the European mission begins." },
+        "first-journey": { "drop": true },
+        "second-journey": { "start": 38, "end": 41, "approx": true, "aside": "Lüdemann's signature claim: the independent European mission — Philippi, Thessalonica, Corinth — dated to c. 38–41, about a decade earlier than the consensus and BEFORE the Jerusalem conference. Acts' numbered-journey order is set aside; the consensus 'first journey' is bracketed altogether." },
+        "third-journey": { "start": 49, "end": 54, "approx": true, "aside": "The post-conference years gathering the collection through Galatia, Macedonia and Achaia, with Paul in Ephesus c. 51 (whence 1 Corinthians)." },
+        "caesarea-custody": { "drop": true },
+        "voyage-rome": { "drop": true },
+        "roman-imprisonment": { "start": 57, "end": 57, "approx": true, "aside": "Only an indirect hint: Lüdemann allows that Philemon and Philippians may have been written from Rome c. 57. He reconstructs no house-arrest chronology." },
+        "final-ministry": { "drop": true },
+        "galatians": { "start": 52, "end": 52, "approx": true, "aside": "Written from Macedonia c. 52, alongside 2 Corinthians — late, not early." },
+        "thessalonians": { "start": 41, "end": 41, "approx": true, "aside": "The famously early 1 Thessalonians, from Corinth c. 41. (2 Thessalonians Lüdemann judges deutero-Pauline and excludes.)" },
+        "first-corinthians": { "start": 51, "end": 51, "approx": true, "aside": "From Ephesus, c. 51." },
+        "second-corinthians": { "start": 52, "end": 52, "approx": true, "aside": "From Macedonia, c. 52 (chs. 1–9 and 10–13 taken together)." },
+        "romans": { "start": 53, "end": 53, "approx": true, "aside": "From Corinth, c. 53 — the latest of the undisputed letters in his scheme." },
+        "prison-epistles": { "start": 51, "end": 52, "approx": true, "aside": "Only Philemon and Philippians count as genuine for Lüdemann (Colossians and Ephesians are excluded as deutero-Pauline); he places them at Ephesus c. 51–52 or, tentatively, at Rome c. 57." },
+        "pastorals": { "drop": true }
+      },
+      "events": {
+        "stephen": { "drop": true },
+        "damascus-road": { "year": 33, "approx": true, "aside": "Conversion at Damascus, 33 — three years before the first Jerusalem visit (35), counted from a 30 A.D. crucifixion." },
+        "council": { "year": 48, "approx": true, "aside": "Lüdemann's second Jerusalem visit, 48 — its outcome the collection pledge; the Antioch incident falls about here too." },
+        "gallio": { "year": 51, "approx": true, "aside": "Lüdemann locates Paul in Corinth and Ephesus around 51, but does not make the Gallio inscription load-bearing; his framework is letter-internal." },
+        "ephesus-riot": { "drop": true },
+        "arrest": { "year": 54, "approx": true, "aside": "Lüdemann dates the third Jerusalem visit — to deliver the collection — to 54, the visit Acts says ended in arrest. His chronology effectively closes here." },
+        "shipwreck": { "drop": true },
+        "rome-arrival": { "year": 57, "approx": true, "aside": "Only the indirect 'from Rome c. 57' hint behind the prison letters; Lüdemann fixes no arrival narrative." },
+        "martyrdom": { "drop": true }
+      }
     }
   ]
 }

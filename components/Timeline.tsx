@@ -2,8 +2,9 @@
 
 import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import Link from "next/link";
-import type { Edition, Span, Anno, Verdict } from "@/lib/types";
+import type { Edition, Span, Anno, Verdict, ChronoScheme } from "@/lib/types";
 import { leftPct, spanPct, yearLabel, spanYears, gridLines } from "@/lib/scale";
+import { resolveEdition } from "@/lib/schemes";
 import Reading from "@/components/Reading";
 
 const FONT_URL =
@@ -34,6 +35,18 @@ export default function Timeline({ edition }: { edition: Edition }) {
   const [selected, setSelected] = useState<Selection>(null);
   const [hoverId, setHoverId] = useState<string | null>(null);
   const [verdictFilter, setVerdictFilter] = useState<Set<Verdict>>(new Set());
+  const schemes = edition.schemes;
+  const [schemeId, setSchemeId] = useState<string>(schemes?.[0]?.id ?? "");
+
+  const activeScheme = useMemo<ChronoScheme | null>(
+    () => schemes?.find((s) => s.id === schemeId) ?? schemes?.[0] ?? null,
+    [schemes, schemeId],
+  );
+  // The edition AS THE ACTIVE SCHEME dates it. With no schemes, this is the edition itself.
+  const view = useMemo(
+    () => (activeScheme ? resolveEdition(edition, activeScheme) : edition),
+    [edition, activeScheme],
+  );
 
   useEffect(() => {
     if (!document.getElementById("annales-fonts")) {
@@ -45,8 +58,9 @@ export default function Timeline({ edition }: { edition: Edition }) {
     }
   }, []);
 
-  const { range, lanes } = edition;
-  const hasVerdicts = useMemo(() => edition.spans.some((s) => s.verdict), [edition]);
+  const { lanes } = edition;
+  const range = view.range;
+  const hasVerdicts = useMemo(() => view.spans.some((s) => s.verdict), [view]);
   const lines = useMemo(() => gridLines(range), [range]);
   const labels = {
     ref: edition.spanLabels?.ref ?? "Reference",
@@ -54,7 +68,7 @@ export default function Timeline({ edition }: { edition: Edition }) {
     aside: edition.spanLabels?.aside ?? "Note",
   };
 
-  const spansByLane = (laneId: string) => edition.spans.filter((s) => s.lane === laneId);
+  const spansByLane = (laneId: string) => view.spans.filter((s) => s.lane === laneId);
 
   const dimmed = (v?: Verdict) =>
     verdictFilter.size > 0 && (!v || !verdictFilter.has(v));
@@ -90,6 +104,17 @@ export default function Timeline({ edition }: { edition: Edition }) {
       <main style={{ maxWidth: 1080, margin: "0 auto", padding: "28px 24px 96px" }}>
         {edition.howToRead && (
           <p style={{ fontSize: 16, lineHeight: 1.7, color: TEXT, maxWidth: 760 }}>{edition.howToRead}</p>
+        )}
+
+        {schemes && schemes.length > 1 && activeScheme && (
+          <SchemeToggle
+            schemes={schemes}
+            active={activeScheme}
+            onPick={(id) => {
+              setSchemeId(id);
+              setSelected(null);
+            }}
+          />
         )}
 
         {hasVerdicts && (
@@ -172,7 +197,7 @@ export default function Timeline({ edition }: { edition: Edition }) {
                 {/* event spine sits between the two lanes */}
                 {i === 0 && (
                   <EventSpine
-                    events={edition.events}
+                    events={view.events}
                     range={range}
                     selected={selected}
                     hoverId={hoverId}
@@ -207,7 +232,7 @@ export default function Timeline({ edition }: { edition: Edition }) {
           </p>
         )}
 
-        <SpanIndex edition={edition} selected={selected} onSelect={(item) => setSelected({ kind: "span", item })} />
+        <SpanIndex edition={view} selected={selected} onSelect={(item) => setSelected({ kind: "span", item })} />
 
         <p style={{ marginTop: 44, fontSize: 12, color: MUTED, textAlign: "center", letterSpacing: 1 }}>
           {edition.translation} · Public Domain · Wroot Press
@@ -218,6 +243,69 @@ export default function Timeline({ edition }: { edition: Edition }) {
 }
 
 /* ---------- pieces ---------- */
+
+function SchemeToggle({
+  schemes,
+  active,
+  onPick,
+}: {
+  schemes: ChronoScheme[];
+  active: ChronoScheme;
+  onPick: (id: string) => void;
+}) {
+  return (
+    <div style={{ margin: "22px 0 4px" }}>
+      <div
+        style={{
+          fontSize: 12,
+          letterSpacing: 2,
+          textTransform: "uppercase",
+          color: MUTED,
+          fontFamily: serif,
+          marginBottom: 8,
+        }}
+      >
+        The chronology
+      </div>
+      <div style={{ display: "inline-flex", flexWrap: "wrap", gap: 2, background: CARD, border: `1px solid ${BORDER}`, borderRadius: 6, padding: 3 }}>
+        {schemes.map((s) => {
+          const on = s.id === active.id;
+          return (
+            <button
+              key={s.id}
+              onClick={() => onPick(s.id)}
+              title={s.name}
+              style={{
+                border: "none",
+                cursor: "pointer",
+                fontFamily: serif,
+                fontSize: 15,
+                letterSpacing: 0.5,
+                padding: "7px 16px",
+                borderRadius: 4,
+                background: on ? ACCENT : "transparent",
+                color: on ? "#f5f0e8" : TEXT,
+                fontWeight: on ? 600 : 400,
+                transition: "background .15s, color .15s",
+              }}
+            >
+              {s.short}
+            </button>
+          );
+        })}
+      </div>
+      <div style={{ maxWidth: 760, marginTop: 12 }}>
+        <div style={{ fontSize: 13, color: TEXT }}>
+          <span style={{ ...{ fontSize: 11, letterSpacing: 2, textTransform: "uppercase" as const, color: MUTED, fontFamily: serif } }}>
+            Anchor
+          </span>{" "}
+          <span style={{ fontFamily: serif, fontSize: 15, color: INK }}>{active.anchor}</span>
+        </div>
+        <p style={{ fontSize: 14.5, lineHeight: 1.6, color: TEXT, margin: "6px 0 0" }}>{active.note}</p>
+      </div>
+    </div>
+  );
+}
 
 function TimelineGrid({ lines, range }: { lines: number[]; range: [number, number] }) {
   return (
@@ -383,6 +471,29 @@ function EventSpine({
   );
 }
 
+function SchemeAside({ name, text }: { name?: string; text: string }) {
+  return (
+    <p
+      style={{
+        fontSize: 14.5,
+        lineHeight: 1.55,
+        color: TEXT,
+        margin: "0 0 12px",
+        padding: "10px 14px",
+        background: "rgba(74,90,122,0.07)",
+        borderLeft: `3px solid ${ACCENT}`,
+        borderRadius: 3,
+      }}
+    >
+      <span style={{ fontSize: 11, letterSpacing: 2, textTransform: "uppercase", color: ACCENT, fontFamily: serif }}>
+        On this reconstruction{name ? ` · ${name}` : ""}
+      </span>
+      <br />
+      {text}
+    </p>
+  );
+}
+
 function Dossier({
   selection,
   labels,
@@ -455,6 +566,7 @@ function Dossier({
             {s.aside}
           </p>
         )}
+        {s.schemeAside && <SchemeAside name={s.schemeName} text={s.schemeAside} />}
         <div style={{ display: "flex", gap: 22, flexWrap: "wrap", fontSize: 14 }}>
           <span>
             <span style={label}>{s.refLabel ?? labels.ref}</span>
@@ -483,6 +595,7 @@ function Dossier({
       <div style={label}>{yearLabel(e.year, e.approx)}</div>
       <h3 style={{ fontFamily: serif, fontSize: 28, fontWeight: 700, margin: "2px 0 8px" }}>{e.label}</h3>
       {e.note && <p style={{ fontSize: 16, lineHeight: 1.65, color: INK, margin: "0 0 12px" }}>{e.note}</p>}
+      {e.schemeAside && <SchemeAside name={e.schemeName} text={e.schemeAside} />}
       <div style={{ fontSize: 14 }}>
         <span style={label}>In Scripture</span>
         <br />
