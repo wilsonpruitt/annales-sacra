@@ -1,0 +1,318 @@
+{
+  "slug": "life-of-paul",
+  "name": "The Life of Paul",
+  "subtitle": "Acts and the letters, on one timeline",
+  "blurb": "Luke tells the journeys; Paul, in his letters, tells the same years from the inside. Lay them side by side and each letter falls into its place — the city it was written from, the journey that produced it.",
+  "source": "Acts · the Pauline letters",
+  "translation": "World English Bible",
+  "range": [32, 68],
+  "indexTitle": "The journeys & the letters",
+  "spanLabels": { "ref": "Reference", "detail": "Where", "aside": "Setting" },
+  "howToRead": "Two tracks for two witnesses to the same life: above, the journeys as Luke narrates them in Acts; below, the letters Paul wrote along the way, each block set at the place and moment it was sent. Click a journey or a letter for its dossier; the diamonds on the spine are the turning-points. A dotted edge marks a date the sources leave genuinely open.",
+  "seedNote": "Pauline chronology is reconstructed, not given — the one fixed peg is Gallio's proconsulship at Corinth (c. A.D. 51), from which the rest is counted forward and back. Dates here follow the common consensus. Two honest fault-lines: the date of Galatians (the early/South-Galatian view placed here, against the later view) and everything after Acts ends — the release, the final journeys, and the martyrdom rest on the Pastoral Epistles and church tradition, and are marked uncertain.",
+  "lanes": [
+    {
+      "id": "journeys",
+      "name": "The journeys — Acts",
+      "ink": "#4a7a78",
+      "sub": "Luke's narrative",
+      "note": "Damascus → Antioch → the three journeys → Rome"
+    },
+    {
+      "id": "letters",
+      "name": "The letters — Paul's hand",
+      "ink": "#b5543f",
+      "sub": "written along the way",
+      "note": "each set where and when it was sent"
+    }
+  ],
+  "spans": [
+    {
+      "id": "damascus-arabia",
+      "lane": "journeys",
+      "label": "Damascus & Arabia",
+      "group": "The hidden years",
+      "start": 34,
+      "end": 37,
+      "ref": "Acts 9:1–25",
+      "refLabel": "In Acts",
+      "detail": "Damascus · Arabia",
+      "detailLabel": "Where",
+      "aside": "\"I went away into Arabia… then after three years I went up to Jerusalem\" (Gal 1:17–18) — Paul's own count of these years.",
+      "note": "After the Damascus road, three years out of sight — Arabia, then Damascus again, escaping the city in a basket lowered through the wall."
+    },
+    {
+      "id": "antioch-tarsus",
+      "lane": "journeys",
+      "label": "Tarsus & Antioch",
+      "group": "The hidden years",
+      "start": 37,
+      "end": 46,
+      "ref": "Acts 9:30–11:30",
+      "refLabel": "In Acts",
+      "detail": "Tarsus · Syrian Antioch",
+      "aside": "The silent decade — almost a third of his Christian life, barely narrated.",
+      "note": "Sent home to Tarsus, then fetched by Barnabas to teach at Antioch, where the disciples were first called Christians. Ends with the famine-relief visit to Jerusalem."
+    },
+    {
+      "id": "first-journey",
+      "lane": "journeys",
+      "label": "First journey",
+      "start": 46,
+      "end": 48,
+      "ref": "Acts 13:1–14:28",
+      "refLabel": "In Acts",
+      "detail": "Cyprus · Pisidian Antioch · Iconium · Lystra · Derbe",
+      "detailLabel": "Route",
+      "note": "Sent out by the Antioch church with Barnabas. Across Cyprus and into the highlands of Galatia — synagogue first, then the Gentiles; stoned at Lystra and left for dead."
+    },
+    {
+      "id": "second-journey",
+      "lane": "journeys",
+      "label": "Second journey",
+      "start": 49,
+      "end": 52,
+      "ref": "Acts 15:36–18:22",
+      "refLabel": "In Acts",
+      "detail": "Philippi · Thessalonica · Berea · Athens · Corinth (18 months)",
+      "detailLabel": "Route",
+      "note": "Split with Barnabas; took Silas, picked up Timothy and Luke. Crossed into Europe at the Macedonian call — the Philippian jailer, the Areopagus, and a year and a half building the church at Corinth."
+    },
+    {
+      "id": "third-journey",
+      "lane": "journeys",
+      "label": "Third journey",
+      "start": 53,
+      "end": 57,
+      "ref": "Acts 18:23–21:16",
+      "refLabel": "In Acts",
+      "detail": "Ephesus (3 years) · Macedonia · Greece · Jerusalem",
+      "detailLabel": "Route",
+      "note": "Three years at Ephesus — the most fruitful and the most embattled — then back through Macedonia and Greece, gathering the collection for Jerusalem and setting his face toward it despite every warning."
+    },
+    {
+      "id": "caesarea-custody",
+      "lane": "journeys",
+      "label": "Caesarean custody",
+      "start": 57,
+      "end": 59,
+      "ref": "Acts 21:17–26:32",
+      "refLabel": "In Acts",
+      "detail": "Jerusalem · Caesarea",
+      "note": "Seized in the temple, nearly torn apart, then held two years at Caesarea — tried before Felix, Festus, and Agrippa, until he appeals to Caesar."
+    },
+    {
+      "id": "voyage-rome",
+      "lane": "journeys",
+      "label": "The voyage to Rome",
+      "start": 59,
+      "end": 60,
+      "ref": "Acts 27:1–28:15",
+      "refLabel": "In Acts",
+      "detail": "Crete · the Adriatic · Malta · Puteoli",
+      "detailLabel": "Route",
+      "note": "The great sea narrative — the northeaster, the cut anchors, the wreck on Malta, the viper that did not bite. Brought at last up the Appian Way."
+    },
+    {
+      "id": "roman-imprisonment",
+      "lane": "journeys",
+      "label": "First Roman imprisonment",
+      "start": 60,
+      "end": 62,
+      "ref": "Acts 28:16–31",
+      "refLabel": "In Acts",
+      "detail": "Rome",
+      "note": "Two years under guard in his own rented house, \"proclaiming the kingdom of God… with all boldness, unhindered\" — the word Acts chooses for its last."
+    },
+    {
+      "id": "final-ministry",
+      "lane": "journeys",
+      "label": "Release & final ministry",
+      "start": 62,
+      "end": 67,
+      "approx": true,
+      "ref": "1 Timothy · Titus · 2 Timothy",
+      "refLabel": "Evidence",
+      "detail": "Crete · Macedonia · (Spain?) · Rome",
+      "detailLabel": "Where",
+      "aside": "Beyond the end of Acts — reconstructed from the Pastorals and early tradition.",
+      "note": "If the Pastorals are read as Paul's, a release followed: further travel — Crete, Macedonia, perhaps the Spain he longed for — then a second arrest and the end."
+    },
+
+    {
+      "id": "galatians",
+      "lane": "letters",
+      "label": "Galatians",
+      "group": "The letters",
+      "start": 48,
+      "end": 48,
+      "approx": true,
+      "ref": "Galatians 1–2",
+      "refLabel": "Dating clue",
+      "detail": "Syrian Antioch (?)",
+      "detailLabel": "Written from",
+      "aside": "Date contested: placed here on the early / South-Galatian view, just before the Jerusalem Council. On the later view it belongs c. A.D. 53–55.",
+      "note": "The freedom letter, white-hot — no gospel but the one received, no salvation by works of the law. Written to the churches of the first journey when teachers came demanding circumcision."
+    },
+    {
+      "id": "thessalonians",
+      "lane": "letters",
+      "label": "1–2 Thessalonians",
+      "group": "The letters",
+      "start": 50,
+      "end": 51,
+      "ref": "1 Thess 3:1–6",
+      "refLabel": "Dating clue",
+      "detail": "Corinth",
+      "detailLabel": "Written from",
+      "aside": "During the second journey, soon after founding the church and sending Timothy back to it.",
+      "note": "Among the earliest Christian writing we have. Comfort for a young church grieving its dead and unsettled about the Lord's return."
+    },
+    {
+      "id": "first-corinthians",
+      "lane": "letters",
+      "label": "1 Corinthians",
+      "group": "The letters",
+      "start": 55,
+      "end": 55,
+      "ref": "1 Cor 16:8",
+      "refLabel": "Dating clue",
+      "detail": "Ephesus",
+      "detailLabel": "Written from",
+      "aside": "From the long Ephesian stay of the third journey — \"I will stay at Ephesus until Pentecost.\"",
+      "note": "Answers to a divided, gifted, scandal-ridden church — factions, the Lord's table, the resurrection, and the more excellent way of love."
+    },
+    {
+      "id": "second-corinthians",
+      "lane": "letters",
+      "label": "2 Corinthians",
+      "group": "The letters",
+      "start": 56,
+      "end": 56,
+      "ref": "2 Cor 2:13 · 7:5",
+      "refLabel": "Dating clue",
+      "detail": "Macedonia",
+      "detailLabel": "Written from",
+      "aside": "Written on the move through Macedonia after a painful visit and a tearful letter.",
+      "note": "The most personal letter — affliction and comfort, the treasure in clay jars, the thorn in the flesh, an apostle defending his weakness as the place God's power is shown."
+    },
+    {
+      "id": "romans",
+      "lane": "letters",
+      "label": "Romans",
+      "group": "The letters",
+      "start": 57,
+      "end": 57,
+      "ref": "Romans 15:25–26",
+      "refLabel": "Dating clue",
+      "detail": "Corinth",
+      "detailLabel": "Written from",
+      "aside": "From Corinth at the end of the third journey, about to carry the collection to Jerusalem and hoping to reach Rome and then Spain.",
+      "note": "The fullest statement of the gospel — sin and grace, Jew and Gentile, the righteousness of God from faith for faith — written ahead to a church he had not yet seen."
+    },
+    {
+      "id": "prison-epistles",
+      "lane": "letters",
+      "label": "The Prison Epistles",
+      "group": "The letters",
+      "start": 60,
+      "end": 62,
+      "ref": "Philippians · Philemon · Colossians · Ephesians",
+      "refLabel": "The four",
+      "detail": "Rome",
+      "detailLabel": "Written from",
+      "aside": "Most likely from the Roman house-arrest of Acts 28 (some place Philippians, or all four, in an earlier Ephesian imprisonment).",
+      "note": "Letters from a prisoner — joy in Philippians, the runaway Onesimus in Philemon, the cosmic Christ in Colossians and Ephesians. Paul \"an ambassador in chains.\""
+    },
+    {
+      "id": "pastorals",
+      "lane": "letters",
+      "label": "The Pastoral Epistles",
+      "group": "The letters",
+      "start": 63,
+      "end": 66,
+      "approx": true,
+      "ref": "1 Timothy · Titus · 2 Timothy",
+      "refLabel": "The three",
+      "detail": "Macedonia · Rome",
+      "detailLabel": "Written from",
+      "aside": "Authorship and date are debated; if Paul's, they belong to the released ministry, 2 Timothy last of all, from a second imprisonment.",
+      "note": "To Timothy and Titus, on ordering the churches — and, at the very end, the valediction: \"I have fought the good fight, I have finished the race, I have kept the faith.\""
+    }
+  ],
+  "events": [
+    {
+      "id": "stephen",
+      "year": 33,
+      "label": "The stoning of Stephen",
+      "ref": "Acts 7:54–8:1",
+      "kind": "death",
+      "note": "Saul stands holding the coats and consenting to the death — the church's first martyr, and the first time we meet the man who will carry the gospel to the empire."
+    },
+    {
+      "id": "damascus-road",
+      "year": 34,
+      "label": "The Damascus road",
+      "ref": "Acts 9:1–19",
+      "kind": "mission",
+      "note": "\"Saul, Saul, why do you persecute me?\" The persecutor is struck blind and called — the apostle to the Gentiles, made by the risen Christ himself."
+    },
+    {
+      "id": "council",
+      "year": 49,
+      "label": "The Council of Jerusalem",
+      "ref": "Acts 15 · Galatians 2",
+      "kind": "covenant",
+      "note": "The hinge of the whole story: the Gentiles need not be circumcised to belong. The freedom of the gospel secured in council, against the men who would have bound it to the law."
+    },
+    {
+      "id": "gallio",
+      "year": 51,
+      "label": "Before Gallio at Corinth",
+      "ref": "Acts 18:12–17",
+      "kind": "trial",
+      "note": "Dragged before the proconsul Gallio, who throws the case out. An inscription dates Gallio's term precisely — the one fixed point from which all of Paul's years are counted."
+    },
+    {
+      "id": "ephesus-riot",
+      "year": 55,
+      "label": "The riot at Ephesus",
+      "ref": "Acts 19:23–41",
+      "kind": "other",
+      "note": "Demetrius and the silversmiths, whose idol trade the gospel threatens, fill the theater two hours deep: \"Great is Artemis of the Ephesians!\""
+    },
+    {
+      "id": "arrest",
+      "year": 57,
+      "label": "Arrest in Jerusalem",
+      "ref": "Acts 21:27–36",
+      "kind": "trial",
+      "note": "Seized in the temple on a false charge, nearly beaten to death, carried off by Roman soldiers. The journeys are over; the trials begin, and they will carry him to Rome."
+    },
+    {
+      "id": "shipwreck",
+      "year": 59,
+      "label": "Shipwreck off Malta",
+      "ref": "Acts 27",
+      "kind": "other",
+      "note": "Fourteen nights driven before a northeaster, the grain ship broken on the rocks, all 276 aboard reaching land — and the prisoner, snake-bitten and unharmed, the calmest man on the beach."
+    },
+    {
+      "id": "rome-arrival",
+      "year": 60,
+      "label": "Arrival in Rome",
+      "ref": "Acts 28:16",
+      "kind": "mission",
+      "note": "\"And so we came to Rome.\" The gospel reaches the empire's heart — not in triumph but in chains, and preaching all the same."
+    },
+    {
+      "id": "martyrdom",
+      "year": 67,
+      "label": "Martyrdom under Nero",
+      "ref": "2 Timothy 4:6–8 (tradition)",
+      "kind": "death",
+      "approx": true,
+      "note": "Beyond the close of Acts. Tradition holds that Paul was beheaded on the Ostian Way in Nero's persecution — \"the time of my departure has come.\""
+    }
+  ]
+}

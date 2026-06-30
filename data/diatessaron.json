@@ -1,0 +1,464 @@
+{
+  "slug": "diatessaron",
+  "name": "The Gospel Harmony",
+  "subtitle": "The four, read across",
+  "blurb": "One life, told four times. Set the gospels side by side and the shared spine, the triple tradition, and John's stubborn independence all come into view — a new Diatessaron that keeps the seams showing.",
+  "translation": "World English Bible",
+  "howToRead": "Read down the page for the one story the four tell together; read across each row for the four who tell it. A filled cell gives the reference in that gospel; an empty cell means that gospel is silent here. The tag on the left counts the witnesses — all four, triple, double, or unique. Click an episode for its parallels and what the harmony reveals.",
+  "seedNote": "Tatian made the first harmony around A.D. 170, fusing the four into a single text. This lens does the opposite — it keeps them distinct and lets you see the seams. The edition carries the major episodes across the whole life, enough to show the patterns: Mark as the shared spine, the triple tradition of the Synoptics, the great divergences (two infancy stories, John's independent signs and discourses), and the one miracle all four record. Harmonizing is itself an interpretation: where the gospels resist a single order — the temple cleansing, the day of the supper, the resurrection appearances — the notes say so rather than smoothing it over. A fuller harmony, pericope by pericope, is the next pass.",
+  "sections": [
+    { "id": "beginnings", "name": "Beginnings", "gloss": "Four openings, two infancies" },
+    { "id": "galilee", "name": "The Galilean Ministry", "gloss": "Baptism to the bread of life" },
+    { "id": "journey", "name": "The Road to Jerusalem", "gloss": "The travel narrative and its parables" },
+    { "id": "passion", "name": "The Passion", "gloss": "Entry to the tomb" },
+    { "id": "risen", "name": "The Resurrection", "gloss": "Empty tomb to ascension" }
+  ],
+  "episodes": [
+    {
+      "id": "prologue-john",
+      "section": "beginnings",
+      "title": "The Word made flesh",
+      "refs": { "john": "1:1–18" },
+      "redLetter": false,
+      "note": "John alone begins before time itself — \"In the beginning was the Word\" — where the others begin with a birth or a baptism."
+    },
+    {
+      "id": "preface-luke",
+      "section": "beginnings",
+      "title": "Luke's preface to Theophilus",
+      "refs": { "luke": "1:1–4" },
+      "note": "The historian's dedication: \"having followed all things accurately from the first, to write to you an orderly account.\""
+    },
+    {
+      "id": "genealogy",
+      "section": "beginnings",
+      "title": "The genealogies",
+      "refs": { "matthew": "1:1–17", "luke": "3:23–38" },
+      "note": "Matthew descends from Abraham through the royal line; Luke ascends past David to Adam. The two lists never quite reconcile — a puzzle the church has worked since Eusebius."
+    },
+    {
+      "id": "annunciation-mary",
+      "section": "beginnings",
+      "title": "The Annunciation",
+      "refs": { "luke": "1:26–38" },
+      "redLetter": true,
+      "note": "Gabriel to Mary, and her yes: \"Let it be to me according to your word.\""
+    },
+    {
+      "id": "visitation",
+      "section": "beginnings",
+      "title": "The Visitation (Magnificat)",
+      "refs": { "luke": "1:39–56" },
+      "note": "Mary's song — \"he has put down princes from their thrones, and has exalted the lowly.\""
+    },
+    {
+      "id": "birth-jesus-mt",
+      "section": "beginnings",
+      "title": "Joseph's dream and the birth",
+      "refs": { "matthew": "1:18–25" },
+      "note": "Matthew tells the Nativity from Joseph's side — the dream, the name, Emmanuel, \"God with us.\""
+    },
+    {
+      "id": "birth-jesus-lk",
+      "section": "beginnings",
+      "title": "The Nativity at Bethlehem",
+      "refs": { "luke": "2:1–20" },
+      "note": "Only Luke gives the census, the manger, and the shepherds keeping watch."
+    },
+    {
+      "id": "magi",
+      "section": "beginnings",
+      "title": "The Magi and the flight to Egypt",
+      "refs": { "matthew": "2:1–23" },
+      "note": "Only Matthew gives the wise men, the star, Herod's fury, and the slaughter of the innocents."
+    },
+    {
+      "id": "temple-boy",
+      "section": "beginnings",
+      "title": "The boy Jesus in the temple",
+      "refs": { "luke": "2:41–52" },
+      "redLetter": true,
+      "note": "The one window between infancy and ministry: \"Didn't you know that I must be in my Father's house?\""
+    },
+
+    {
+      "id": "baptist-preaching",
+      "section": "galilee",
+      "title": "John the Baptist preaches",
+      "refs": { "matthew": "3:1–12", "mark": "1:1–8", "luke": "3:1–18", "john": "1:19–28" },
+      "note": "The one figure all four set at the threshold — \"a voice crying in the wilderness.\""
+    },
+    {
+      "id": "baptism",
+      "section": "galilee",
+      "title": "The Baptism of Jesus",
+      "refs": { "matthew": "3:13–17", "mark": "1:9–11", "luke": "3:21–22", "john": "1:29–34" },
+      "note": "John's Gospel reports it obliquely, through the Baptist's testimony — \"I have seen and have testified that this is the Son of God.\""
+    },
+    {
+      "id": "temptation",
+      "section": "galilee",
+      "title": "The Temptation in the wilderness",
+      "refs": { "matthew": "4:1–11", "mark": "1:12–13", "luke": "4:1–13" },
+      "note": "Mark gives it in two verses; Matthew and Luke give the three temptations in full, though in differing order."
+    },
+    {
+      "id": "first-disciples",
+      "section": "galilee",
+      "title": "The first disciples",
+      "refs": { "john": "1:35–51" },
+      "note": "John alone gives this earlier Judean call — Andrew, Peter, Nathanael — before the Galilean one."
+    },
+    {
+      "id": "cana",
+      "section": "galilee",
+      "title": "Water into wine at Cana",
+      "refs": { "john": "2:1–11" },
+      "note": "John's first sign, \"the beginning of his signs,\" found in no other gospel."
+    },
+    {
+      "id": "nicodemus",
+      "section": "galilee",
+      "title": "Nicodemus by night",
+      "refs": { "john": "3:1–21" },
+      "redLetter": true,
+      "note": "\"You must be born again\" — and John 3:16. John only."
+    },
+    {
+      "id": "samaritan-woman",
+      "section": "galilee",
+      "title": "The woman at the well",
+      "refs": { "john": "4:1–42" },
+      "redLetter": true,
+      "note": "\"The water that I will give him will become a well of water springing up to eternal life.\" John only."
+    },
+    {
+      "id": "call-galilee",
+      "section": "galilee",
+      "title": "Calling fishermen by the sea",
+      "refs": { "matthew": "4:18–22", "mark": "1:16–20", "luke": "5:1–11" },
+      "note": "Luke alone adds the great catch of fish and Peter's \"depart from me, for I am a sinful man.\""
+    },
+    {
+      "id": "peters-mother",
+      "section": "galilee",
+      "title": "Healing Peter's mother-in-law",
+      "refs": { "matthew": "8:14–17", "mark": "1:29–34", "luke": "4:38–41" }
+    },
+    {
+      "id": "sermon-mount",
+      "section": "galilee",
+      "title": "The Sermon on the Mount",
+      "refs": { "matthew": "5:1–7:29", "luke": "6:20–49" },
+      "redLetter": true,
+      "note": "Matthew's great mountain sermon; Luke gives a shorter \"sermon on the plain\" with its own blessings and woes."
+    },
+    {
+      "id": "centurion-servant",
+      "section": "galilee",
+      "title": "The centurion's servant",
+      "refs": { "matthew": "8:5–13", "luke": "7:1–10" },
+      "note": "\"I have not found so great a faith, not even in Israel.\""
+    },
+    {
+      "id": "widow-nain",
+      "section": "galilee",
+      "title": "The widow of Nain's son",
+      "refs": { "luke": "7:11–17" },
+      "note": "Unique to Luke — the first of his raisings, mercy for a widow's only son."
+    },
+    {
+      "id": "stilling-storm",
+      "section": "galilee",
+      "title": "Stilling the storm",
+      "refs": { "matthew": "8:23–27", "mark": "4:35–41", "luke": "8:22–25" },
+      "note": "\"Who then is this, that even the wind and the sea obey him?\""
+    },
+    {
+      "id": "gerasene",
+      "section": "galilee",
+      "title": "The Gerasene demoniac",
+      "refs": { "matthew": "8:28–34", "mark": "5:1–20", "luke": "8:26–39" },
+      "note": "Legion, and the herd of swine; Mark and Luke give one man, Matthew two."
+    },
+    {
+      "id": "jairus",
+      "section": "galilee",
+      "title": "Jairus's daughter and the bleeding woman",
+      "refs": { "matthew": "9:18–26", "mark": "5:21–43", "luke": "8:40–56" },
+      "note": "A story folded inside a story — \"Talitha cumi,\" the touched hem, \"your faith has made you well.\""
+    },
+    {
+      "id": "sending-twelve",
+      "section": "galilee",
+      "title": "Sending out the Twelve",
+      "refs": { "matthew": "10:1–42", "mark": "6:7–13", "luke": "9:1–6" },
+      "redLetter": true,
+      "note": "Matthew gathers a whole missionary discourse where Mark and Luke give only the commission."
+    },
+    {
+      "id": "death-baptist",
+      "section": "galilee",
+      "title": "The death of John the Baptist",
+      "refs": { "matthew": "14:1–12", "mark": "6:14–29" },
+      "note": "Mark tells Herod's birthday banquet, Herodias, and the dance in full; Luke only alludes to it."
+    },
+    {
+      "id": "feeding-5000",
+      "section": "galilee",
+      "title": "Feeding the five thousand",
+      "refs": { "matthew": "14:13–21", "mark": "6:30–44", "luke": "9:10–17", "john": "6:1–14" },
+      "note": "The one miracle all four record — the hinge where the harmony's four lanes briefly run as one."
+    },
+    {
+      "id": "walking-water",
+      "section": "galilee",
+      "title": "Walking on the water",
+      "refs": { "matthew": "14:22–33", "mark": "6:45–52", "john": "6:15–21" },
+      "note": "Luke alone omits it; Matthew alone adds Peter stepping out and sinking."
+    },
+    {
+      "id": "bread-life",
+      "section": "galilee",
+      "title": "The bread of life discourse",
+      "refs": { "john": "6:22–71" },
+      "redLetter": true,
+      "note": "John's reading of the feeding: \"I am the bread of life,\" and the hard saying that empties the crowd."
+    },
+    {
+      "id": "peters-confession",
+      "section": "galilee",
+      "title": "Peter's confession at Caesarea Philippi",
+      "refs": { "matthew": "16:13–20", "mark": "8:27–30", "luke": "9:18–21" },
+      "redLetter": true,
+      "note": "Matthew alone adds \"on this rock I will build my church\" and the keys."
+    },
+    {
+      "id": "transfiguration",
+      "section": "galilee",
+      "title": "The Transfiguration",
+      "refs": { "matthew": "17:1–13", "mark": "9:2–13", "luke": "9:28–36" },
+      "note": "Moses and Elijah, the bright cloud, the voice — \"This is my beloved Son.\" John, who was there, never tells it."
+    },
+    {
+      "id": "lazarus",
+      "section": "galilee",
+      "title": "The raising of Lazarus",
+      "refs": { "john": "11:1–44" },
+      "redLetter": true,
+      "note": "John's climactic sign — \"I am the resurrection and the life\" — and in John the act that seals the plot to kill him."
+    },
+
+    {
+      "id": "good-samaritan",
+      "section": "journey",
+      "title": "The Good Samaritan",
+      "refs": { "luke": "10:25–37" },
+      "redLetter": true,
+      "note": "A Lukan parable found nowhere else — \"Go and do likewise.\""
+    },
+    {
+      "id": "mary-martha",
+      "section": "journey",
+      "title": "Mary and Martha",
+      "refs": { "luke": "10:38–42" },
+      "redLetter": true,
+      "note": "\"Mary has chosen the good part.\" Luke only."
+    },
+    {
+      "id": "lords-prayer",
+      "section": "journey",
+      "title": "The Lord's Prayer",
+      "refs": { "matthew": "6:9–13", "luke": "11:1–4" },
+      "redLetter": true,
+      "note": "Matthew sets it in the Sermon on the Mount; Luke, taught on the road at a disciple's asking — and shorter."
+    },
+    {
+      "id": "prodigal",
+      "section": "journey",
+      "title": "The prodigal son",
+      "refs": { "luke": "15:11–32" },
+      "redLetter": true,
+      "note": "The third of Luke's parables of the lost — sheep, coin, son — and the father who runs."
+    },
+    {
+      "id": "rich-lazarus",
+      "section": "journey",
+      "title": "The rich man and Lazarus",
+      "refs": { "luke": "16:19–31" },
+      "redLetter": true,
+      "note": "Luke alone — \"they have Moses and the prophets; let them hear them.\""
+    },
+    {
+      "id": "blind-bartimaeus",
+      "section": "journey",
+      "title": "Blind Bartimaeus at Jericho",
+      "refs": { "matthew": "20:29–34", "mark": "10:46–52", "luke": "18:35–43" },
+      "note": "Mark alone gives the beggar his name; Matthew gives two blind men."
+    },
+    {
+      "id": "zacchaeus",
+      "section": "journey",
+      "title": "Zacchaeus in the sycamore",
+      "refs": { "luke": "19:1–10" },
+      "redLetter": true,
+      "note": "\"The Son of Man came to seek and to save that which was lost.\" Luke only."
+    },
+
+    {
+      "id": "triumphal-entry",
+      "section": "passion",
+      "title": "The Triumphal Entry",
+      "refs": { "matthew": "21:1–11", "mark": "11:1–11", "luke": "19:28–44", "john": "12:12–19" },
+      "note": "All four bring him into the city on the colt; Luke alone has him weep over Jerusalem."
+    },
+    {
+      "id": "temple-cleansing",
+      "section": "passion",
+      "title": "Cleansing the temple",
+      "refs": { "matthew": "21:12–17", "mark": "11:15–19", "luke": "19:45–48" },
+      "note": "A famous crux: John places his temple cleansing at the very start of the ministry (2:13–22), not Passion week. Whether one cleansing or two is an old debate the harmony cannot settle."
+    },
+    {
+      "id": "olivet",
+      "section": "passion",
+      "title": "The Olivet discourse",
+      "refs": { "matthew": "24:1–25:46", "mark": "13:1–37", "luke": "21:5–38" },
+      "redLetter": true,
+      "note": "The discourse on the end; Matthew adds the parables of the virgins, the talents, and the sheep and goats."
+    },
+    {
+      "id": "anointing-bethany",
+      "section": "passion",
+      "title": "The anointing at Bethany",
+      "refs": { "matthew": "26:6–13", "mark": "14:3–9", "john": "12:1–8" },
+      "note": "John names Mary of Bethany and Judas's complaint. Luke has a different anointing, earlier and by a sinful woman (7:36–50)."
+    },
+    {
+      "id": "last-supper",
+      "section": "passion",
+      "title": "The Last Supper",
+      "refs": { "matthew": "26:17–29", "mark": "14:12–25", "luke": "22:7–23", "john": "13:1–30" },
+      "note": "The Synoptics give the bread and the cup; John gives the footwashing in their place. The Synoptics call it the Passover; John times the death to the Passover lambs instead — the gospels' hardest chronological knot."
+    },
+    {
+      "id": "farewell",
+      "section": "passion",
+      "title": "The footwashing and farewell discourse",
+      "refs": { "john": "13:1–17:26" },
+      "redLetter": true,
+      "note": "Five chapters where the Synoptics give the meal: the new commandment, the vine, the Paraclete, and the high-priestly prayer. John only."
+    },
+    {
+      "id": "gethsemane",
+      "section": "passion",
+      "title": "Gethsemane",
+      "refs": { "matthew": "26:36–46", "mark": "14:32–42", "luke": "22:39–46" },
+      "note": "\"Not what I will, but what you will.\" Luke alone gives the sweat like blood; John omits the agony entirely."
+    },
+    {
+      "id": "arrest",
+      "section": "passion",
+      "title": "The arrest",
+      "refs": { "matthew": "26:47–56", "mark": "14:43–52", "luke": "22:47–53", "john": "18:1–11" },
+      "note": "Judas's kiss; only John names Malchus and the disciple with the sword, only Mark the young man who fled naked."
+    },
+    {
+      "id": "before-sanhedrin",
+      "section": "passion",
+      "title": "Trial before the Sanhedrin",
+      "refs": { "matthew": "26:57–68", "mark": "14:53–65", "luke": "22:63–71", "john": "18:19–24" },
+      "note": "The high priest, the charge of blasphemy, the spitting and blows."
+    },
+    {
+      "id": "peter-denial",
+      "section": "passion",
+      "title": "Peter's denial",
+      "refs": { "matthew": "26:69–75", "mark": "14:66–72", "luke": "22:54–62", "john": "18:15–27" },
+      "note": "Three times before the cock crows; Luke alone has the Lord turn and look at him."
+    },
+    {
+      "id": "before-pilate",
+      "section": "passion",
+      "title": "Trial before Pilate",
+      "refs": { "matthew": "27:11–26", "mark": "15:1–15", "luke": "23:1–25", "john": "18:28–19:16" },
+      "note": "Luke alone sends him to Herod; John alone gives the long exchange — \"What is truth?\" — and \"Behold the man.\""
+    },
+    {
+      "id": "crucifixion",
+      "section": "passion",
+      "title": "The Crucifixion",
+      "refs": { "matthew": "27:32–44", "mark": "15:21–32", "luke": "23:26–43", "john": "19:16–27" },
+      "note": "The seven last words are scattered across all four — no single gospel holds them all. Luke gives the penitent thief; John, the mother and the beloved disciple."
+    },
+    {
+      "id": "death",
+      "section": "passion",
+      "title": "The death of Jesus",
+      "refs": { "matthew": "27:45–56", "mark": "15:33–41", "luke": "23:44–49", "john": "19:28–37" },
+      "redLetter": true,
+      "note": "\"My God, my God\" (Matthew, Mark); \"Into your hands\" (Luke); \"It is finished\" (John). The torn veil, the centurion, the pierced side."
+    },
+    {
+      "id": "burial",
+      "section": "passion",
+      "title": "The burial",
+      "refs": { "matthew": "27:57–66", "mark": "15:42–47", "luke": "23:50–56", "john": "19:38–42" },
+      "note": "Joseph of Arimathea in all four; John adds Nicodemus and the hundred pounds of spices; Matthew alone, the guard at the tomb."
+    },
+
+    {
+      "id": "empty-tomb",
+      "section": "risen",
+      "title": "The empty tomb",
+      "refs": { "matthew": "28:1–10", "mark": "16:1–8", "luke": "24:1–12", "john": "20:1–10" },
+      "note": "The women come first in all four — but which women, how many angels, and what they did next, each tells differently. The harmony's sharpest divergence is here."
+    },
+    {
+      "id": "magdalene",
+      "section": "risen",
+      "title": "Mary Magdalene meets the risen Lord",
+      "refs": { "john": "20:11–18" },
+      "redLetter": true,
+      "note": "\"Do not hold on to me.\" The garden, the spoken name, the first commission — John only."
+    },
+    {
+      "id": "emmaus",
+      "section": "risen",
+      "title": "The road to Emmaus",
+      "refs": { "luke": "24:13–35" },
+      "note": "Unique to Luke — known at last in the breaking of the bread."
+    },
+    {
+      "id": "upper-room",
+      "section": "risen",
+      "title": "Appearances in the upper room",
+      "refs": { "luke": "24:36–43", "john": "20:19–29" },
+      "redLetter": true,
+      "note": "\"Peace be with you\"; the wounds shown; Thomas — \"My Lord and my God.\""
+    },
+    {
+      "id": "galilee-appearance",
+      "section": "risen",
+      "title": "By the Sea of Galilee",
+      "refs": { "john": "21:1–25" },
+      "redLetter": true,
+      "note": "John's epilogue — the catch of 153 fish, the charcoal fire, \"Feed my sheep.\""
+    },
+    {
+      "id": "great-commission",
+      "section": "risen",
+      "title": "The Great Commission",
+      "refs": { "matthew": "28:16–20", "mark": "16:14–18" },
+      "redLetter": true,
+      "note": "\"Go and make disciples of all nations… I am with you always.\" (Mark's ending, 16:9–20, is itself textually disputed.)"
+    },
+    {
+      "id": "ascension",
+      "section": "risen",
+      "title": "The Ascension",
+      "refs": { "mark": "16:19–20", "luke": "24:50–53" },
+      "note": "Luke alone tells it twice — at the end of his gospel and again at the opening of Acts."
+    }
+  ]
+}
